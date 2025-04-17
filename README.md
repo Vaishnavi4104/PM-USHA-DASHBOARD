@@ -2,6 +2,10 @@
 
 A comprehensive dashboard application for Project Monitoring Unit of Strengthening Healthcare Accessibility (PM-USHA), built with React and Material-UI.
 
+## 🔗 Live Demo
+
+[View Live Demo](YOUR_DEPLOYMENT_URL) - Deployed on Vercel
+
 ## Features
 
 - 🔐 **Role-based Authentication**: Secure access with different user roles (Admin, Finance, Construction, Equipment, etc.)
