@@ -1,0 +1,211 @@
+/* src/assets/css/styles.css */
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Root variables for government-themed colors */
+  :root {
+    --primary-blue: #003087;    /* Deep blue for headers, charts */
+    --secondary-orange: #ff6200; /* Orange for accents, highlights */
+    --white: #ffffff;           /* White for backgrounds, text */
+    --gray-light: #dcdcdc;      /* Light gray for borders, backgrounds */
+    --gray-dark: #666666;       /* Dark gray for secondary text */
+  }
+  
+  /* Layout container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  /* Main content area */
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Header/Navbar styles */
+  header {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 10px 20px;
+  }
+  
+  /* Sidebar styles */
+  aside {
+    background-color: var(--white);
+    border-right: 1px solid var(--gray-light);
+    width: 250px;
+    padding: 20px;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: var(--secondary-orange);
+    color: var(--white);
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #e55a00; /* Darker orange on hover */
+  }
+  
+  /* Charts container */
+  .chart-container {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    aside {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid var(--gray-light);
+    }
+  
+    main {
+      padding: 10px;
+    }
+  }
+
+  
+.dashboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.dashboard-container {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 60px); /* Adjust based on your navbar height */
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f5f6fa;
+  transition: margin-left 0.3s;
+  overflow-y: auto;
+}
+
+.main-content.sidebar-open {
+  margin-left: 250px; /* Adjust based on your sidebar width */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  transition: transform 0.3s;
+}
+
+.sidebar.closed {
+  transform: translateX(-250px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-content.sidebar-open {
+    margin-left: 0;
+  }
+  
+  .sidebar {
+    width: 100%;
+    z-index: 1000;
+  }
+}
+
+/* Card styles */
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+/* Chart container styles */
+.chart-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.activity-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.activity-list p {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  margin: 0;
+}
+
+.activity-list p:last-child {
+  border-bottom: none;
+}
+
+.card {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-title {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  color: #34495e;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}

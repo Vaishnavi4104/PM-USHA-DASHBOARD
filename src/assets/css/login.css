@@ -1,0 +1,58 @@
+.login-page {
+  background: linear-gradient(135deg, #0061f2 0%, #6610f2 100%);
+  min-height: 100vh;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.98);
+}
+
+.form-control {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #0061f2;
+  box-shadow: 0 0 0 0.2rem rgba(0, 97, 242, 0.25);
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #0061f2, #6610f2);
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(0, 97, 242, 0.35);
+}
+
+.btn-outline-secondary {
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6610f2;
+  border-color: #6610f2;
+}
+
+.text-primary {
+  color: #0061f2 !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.gap-2 {
+  gap: 0.5rem !important;
+}
