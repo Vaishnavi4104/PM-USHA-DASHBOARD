@@ -4,7 +4,7 @@ A comprehensive dashboard application for Project Monitoring Unit of Strengtheni
 
 ## 🔗 Live Demo
 
-[View Live Demo](YOUR_DEPLOYMENT_URL) - Deployed on Vercel
+[View Live Demo]https://pm-usha-dashboard.vercel.app/ - Deployed on Vercel
 
 ## Features
 
@@ -125,5 +125,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Your Name - your.email@example.com
-Project Link: [https://github.com/yourusername/pm-usha-dashboard](https://github.com/yourusername/pm-usha-dashboard)
+Vaishnavi Shinde - vaishnavibs241@gmail.com
+Project Link: [https://github.com/Vaishnavi4104/pm-usha-dashboard](https://github.com/Vaishnavi4104/pm-usha-dashboard)
